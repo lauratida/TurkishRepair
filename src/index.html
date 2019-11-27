@@ -6,9 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repair Design Project</title>
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <!-- шапка -->
+  <header class="header">
+  <!-- меню -->
   <nav class="container navbar">
     <svg class="ham ham3" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
       <path
@@ -31,11 +34,41 @@
       <li class="menu__item">Отзывы</li>
       <li class="menu__item">Контакты</li>
     </ul>
-    <a href="tel:+79997683299" class="navbar__phone swing">+7 (999) 768-32-99</a>
+    <a href="tel:+79997683299" class="navbar__phone">+7 (999) 768-32-99</a>
     <button class="button navbar__button">Заказать звонок</button>
   </nav>
+  <!-- шапка-главный экран -->
+  <div class="section header-main">
+    <div class="padding-left">
+      <a href="#" class="instagramm-link">instagram</a>
+      <div class="header-main__scroll">
+          листайте вниз
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14.5" cy="14.5" r="13.75" stroke="#E3B873" stroke-width="1.5"/>
+            <path d="M18.7214 13.1271L14.4082 17.4092L10.095 13.1271" stroke="#E3B873" stroke-width="1.5"/>
+          </svg>
+      </div>
+    </div>
+    <div class="header-main__img">
+      <!-- <img src="img/header.jpg" alt="Турецкий ремонт"> -->
+    </div>
+    <div class="header-main__text">
+      <h1 class="header-main__title">
+          турецкий ремонт 
+          в <span class="maincolor-text">Ростове-на-дону</span>
+      </h1>
+      <p class="header-main__desc">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
+      <div class="header-main__buttons">
+        <button class="button button_more header-main__button">Рассчитать стоимость</button>
+        <button class="button button_more button_border header-main__button">отправить заявку</button>
+      </div>
+    </div>
+    
+  </div>
+  </header>
 
   <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
