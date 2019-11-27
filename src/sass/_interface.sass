@@ -1,0 +1,53 @@
+$white: #fff
+$black: #131313
+$main: #E3B873
+
+=futuraDemi
+  font-family: FuturaDemiC, sans-serif
+  font-weight: normal
+=book
+  font-family: FuturaBookC, sans-serif
+  font-weight: normal
+=futuraDemiItalic
+  font-family: FuturaDemiC, sans-serif
+  font-weight: normal
+  font-style: italic
+*
+  box-sizing: border-box
+img
+  max-width: 100%
+
+body
+  +futuraDemi
+  font-size: 15px
+.container
+  // max-width: 1240px
+  padding: 0 calc( (100% - 1240px) / 2 )
+  // margin: auto
+  // border: 1px solid red
+  @media ( max-width: 1430px )
+    // max-width: 1040px
+    padding: 0 calc( (100% - 1040px) / 2 )
+  @media ( max-width: 1200px )
+    padding: 0 calc( (100% - 832px) / 2 )
+  @media ( max-width: 992px )
+    padding: 0 calc( (100% - 688px) / 2 )
+  @media ( max-width: 768px )
+    padding: 0 calc( (100% - 539px) / 2 )
+  @media ( max-width: 575px )
+    padding: 0 18px
+.button
+  background: $main
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
+  border-radius: 2px
+  padding: 11px 21px 11px 21px
+  text-transform: uppercase
+  border: none
+  color: $white
+  font-size: 13px
+  line-height: 15px
+  &:hover
+    cursor: pointer
+    background-color: darken($main, 10% )
+.burger-menu
+  display: none

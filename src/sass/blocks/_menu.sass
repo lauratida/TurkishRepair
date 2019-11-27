@@ -1,0 +1,43 @@
+
+
+#burger-menu 
+  overflow: hidden
+  position: absolute
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+#burger-menu input
+  display: flex
+  width: 60px
+  height: 60px
+  position: absolute
+  cursor: pointer
+  opacity: 0; /* hide input */
+  z-index: 1; /* top of the menu */
+
+#burger-menu span
+  width: 55px
+  height: 8px
+  margin-bottom: 10px
+  background: $main
+  border-radius: 0px
+  transition: all .5s cubic-bezier(.08,.81,.87,.71)
+
+#span1 
+  transform-origin: 4px 0px
+#span3 
+  transform-origin: bottom right
+#burger-menu input:checked ~ #span1 
+  background-color: darken ($main, 10%)
+  transform: rotate(45deg) translate(8px);
+#burger-menu input:checked ~ #span2 
+  background-color: darken ($main, 10%)
+  transform: rotate(495deg) translate(4px);   
+#burger-menu input:checked ~ #span3 
+  background-color: darken ($main, 10%)
+  transform: rotate(45deg)
+  opacity: 0
