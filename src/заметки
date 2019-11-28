@@ -5,15 +5,44 @@
 @media ( max-width: 575px )
 
 @media ( min-width: 993px )
+.container
+  padding: 0 calc( (100% - 1240px) / 2 )
+  @media ( max-width: 1430px )
+    padding: 0 calc( (100% - 1040px) / 2 )
+  @media ( max-width: 1200px )
+    padding: 0 calc( (100% - 832px) / 2 )
+  @media ( max-width: 992px )
+    padding: 0 calc( (100% - 688px) / 2 )
+  @media ( max-width: 768px )
+    padding: 0 calc( (100% - 539px) / 2 )
+  @media ( max-width: 575px )
+    padding: 0 18px
 
 
-/* main.min.css | http://127.0.0.1:5500/src/css/main.min.css */
+/* Элемент | http://127.0.0.1:5500/src/index.html */
 
-.instagramm-link {
-  /* left: 3px; */
-  right: 18px;
+.mainslider-pagination {
+  width: auto;
 }
 
-.padding-left {
-  position: relative;
+/* swiper.min.css | http://127.0.0.1:5500/src/css/swiper.min.css */
+
+.swiper-pagination-bullet {
+  /* width: 8px; */
+  /* height: 8px; */
+  /* background: #000; */
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+  /* background: #007aff; */
+  background: #fff;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  /* left: 0; */
+  left: 73px;
+  bottom: -2px;
 }

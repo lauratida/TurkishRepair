@@ -1,0 +1,78 @@
+.projects 
+  display: flex
+  background-color: $black
+  padding-bottom: 415px
+  position: relative
+  padding-top: 128px
+  background-image: url('./img/projects/bgwaves.swg')
+  &__mainslider
+    width: 100%
+  &__title
+    position: absolute
+    max-width: 253px
+    left: calc( (100% - 1240px) / 2 )
+    top: 128px
+    margin: 0
+
+.mainslider
+  &__slide
+    display: flex
+    width: 100%
+  &-desc
+    width: 494px
+    display: flex
+    flex-wrap: wrap
+    padding-top: 100px
+    align-content: flex-start
+    flex-shrink: 0
+    &__item
+      flex-basis: 50%
+      color: $white
+      margin-bottom: 34px
+      line-height: 20px;
+      &-title
+        margin: 0
+        margin-bottom: 10px
+        +yeseva
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $main
+  &__text
+    +book
+    font-size: 18px;
+    line-height: 29px;
+    color: $white
+
+// .mainslider
+//   &-button
+//     position: absolute
+//     bottom: 0
+//     left: 0
+//     display: flex
+//     justify-content: space-between
+//     width: 206px
+//     &-next, &-prev
+//       width: 42px
+//       height: 14px
+//     &-prev
+//       transform: rotate(180deg)
+.projects__mainslider
+  .mainslider
+    &-pagination
+      width: auto;
+      left: 73px;
+      bottom: -2px;
+      .swiper-pagination-bullet
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.3);
+      .swiper-pagination-bullet-active
+        background: #fff
+
+.photoslider__slide
+  width: 679px
+// .projects-mainslider
+//   position: relative
+//   // height: 200px
+//   background-color: $black
