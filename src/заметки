@@ -19,29 +19,11 @@
     padding: 0 18px
 
 
-/* main.min.css | http://127.0.0.1:5500/src/css/main.min.css */
 
-.photoslider-button {
-  /* bottom: 0; */
-  /* width: 206px; */
-  bottom: 50%;
-  width: 100%;
-}
 
-.photoslider-button-next, .photoslider-button-prev {
-  /* width: 54px; */
-  /* height: 54px; */
-  width: 85px;
-  height: 85px;
-}
+/* main.css | http://127.0.0.1:5500/src/css/main.css */
 
-/* swiper.min.css | http://127.0.0.1:5500/src/css/swiper.min.css */
-
-.swiper-button-next, .swiper-button-prev {
-  /* top: 50%; */
-  top: calc(50% - 85px);
-}
-
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-  display: none;
+.bgwaves {
+  height: 100%;
+  object-fit: cover;
 }

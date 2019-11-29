@@ -20,6 +20,7 @@ $( document ).ready(function() {
   });
 
   var swiper2 = new Swiper('.projects__photoslider', {
+    direction: 'horizontal',
     slidesPerView: 'auto',
     spaceBetween: 20,
     nested: 'true',
@@ -27,6 +28,22 @@ $( document ).ready(function() {
       nextEl: '.photoslider-button-next',
       prevEl: '.photoslider-button-prev',
     },
+    breakpoints: {
+      // when window width is >= 320px
+      // 320: {
+      // },
+      // when window width is >= 480px
+      576: {
+        direction: 'horizontal',
+      },
+      // when window width is >= 640px
+      769: {
+        direction: 'vertical',
+      },
+      993: {
+        direction: 'horizontal',
+      }
+    }
   });
 });
 
