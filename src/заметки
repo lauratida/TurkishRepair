@@ -19,11 +19,3 @@
     padding: 0 18px
 
 
-
-
-/* main.css | http://127.0.0.1:5500/src/css/main.css */
-
-.bgwaves {
-  height: 100%;
-  object-fit: cover;
-}

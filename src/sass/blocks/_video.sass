@@ -1,0 +1,97 @@
+.youtube
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+  width: 817px
+  height: 434px
+  margin-bottom: 70px;
+div.youtube:after
+  content: ''
+  display: block
+  width: 100%
+  height: 100%
+  background-color: $black
+  opacity: 0.8
+  
+.youtube .play
+  background: url('../img/youtube-play-btn.png') no-repeat; /*ВАЖНО: здесь укажите адрес до изображения*/
+  background-position: 0 0px;
+  // background-size: 100% auto;
+  position: absolute;
+  height: 145px;
+  width: 145px;
+  transition: none;
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  z-index: 1
+.youtube:hover 
+  .play
+    background-position: 0 0;
+
+
+.video
+  display: flex
+  flex-direction: column
+  // justify-content: center
+  align-items: center
+  margin-top: -343px;
+  padding-bottom: 30px
+  &__title
+    z-index: 0
+    font-size: 20px;
+    line-height: 28px;
+    color: $white
+    margin-left: 5px;
+    margin-bottom: 13px;
+    letter-spacing: 0
+  &__imgtitle
+    +yeseva
+    width: 114px
+    height: 28px
+    z-index: 0
+    margin-bottom: 32px;
+  &__desc
+    max-width: 603px;
+    +book
+    font-size: 20px
+    line-height: 34px;
+    text-align: center;
+    color: $dark-text
+    position: relative
+    margin-bottom: 61px
+    &:before
+      content: ''
+      width: 55px
+      height: 2px
+      background-color: $main
+      display: block
+      position: absolute
+      top: -28px
+      left: 50%
+      transform: translateX(-50%)
+  &-form
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+    width: 769px
+    &__label
+      max-width: 231px
+      margin-bottom: 38px;
+    &__button
+      padding-left: 60px
+      padding-right: 60px
+      letter-spacing: 0.066em;
+    &__checkbox
+      flex-basis: 100%
+      max-width: 327px;
+      padding-right: 40px;
+      text-align: center

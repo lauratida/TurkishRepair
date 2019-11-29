@@ -1,6 +1,8 @@
 $white: #fff
 $black: #131313
 $main: #E3B873
+$grey: rgba(54, 54, 54, 0.5)
+$dark-text: #363636
 
 =futuraDemi
   font-family: FuturaDemiC, sans-serif
@@ -85,6 +87,47 @@ body
         color: $main
         &:after
           background-color: $white
+
+.label
+  +book
+  font-size: 15px
+  position: relative
+  span
+    color: $grey
+    position: absolute
+    top: 0
+    left: 0
+.input
+  border: none
+  border-bottom: 1px solid $grey
+  width: 231px
+  height: 47px;
+  padding-top: 16px;
+  color: $dark-text
+  opacity: 1
+  &::placeholder
+    color: $dark-text
+    opacity: 1
+    font-size: 18px
+    line-height: 24px
+input[type=checkbox]
+  display: none
+  position: relative
+.label-checkbox
+  margin: auto
+  display: flex
+  max-width: 270px
+  letter-spacing: 0.029em;
+  &:before
+    content: ''
+    display: block
+    width: 18px
+    height: 18px
+    background-color: $main
+    // position: absolute
+    margin-right: 10px
+input.checkbox:checked + label:before
+  content: url('../img/video/check.svg')
 .section
   &__title
     +yeseva

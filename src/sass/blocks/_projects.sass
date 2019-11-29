@@ -1,7 +1,7 @@
 .projects 
   display: flex
   background-color: $black
-  padding-bottom: 415px
+  padding-bottom: 412px;
   position: relative
   padding-top: 128px
   
@@ -46,7 +46,7 @@
   &-staticdesc
     position: absolute
     left: calc( (100% - 1240px) / 2 )
-    top: 128px
+    top: 125px
     max-width: 450px
     @media ( max-width: 1430px )
       left: calc( (100% - 1040px) / 2 )
@@ -80,7 +80,8 @@
     width: 494px
     display: flex
     flex-wrap: wrap
-    padding-top: 228px
+    padding-top: 225px;
+    padding-left: 2px;
     align-content: flex-start
     flex-shrink: 0
     @media ( max-width: 1200px )
@@ -93,15 +94,16 @@
     @media ( max-width: 575px )
       width: 100%
     &__item
-      flex-basis: 50%
+      flex-basis: 38.5%
       color: $white
       margin-bottom: 34px
       line-height: 20px;
       @media ( max-width: 1200px )
         margin-bottom: 17px;
+        flex-basis: 50%
       &-title
         margin: 0
-        margin-bottom: 10px
+        margin-bottom: 7px
         +yeseva
         font-size: 18px;
         line-height: 25px;
@@ -112,6 +114,7 @@
     font-size: 18px;
     line-height: 29px;
     color: $white
+    margin-top: 22px;
     @media ( max-width: 1200px )
       font-size: 16px;
       margin-top: 5px;
@@ -119,8 +122,8 @@
 .mainslider
   &-button
     position: absolute
-    bottom: 0
-    left: 0
+    bottom: 2px;
+    left: 3px;
     display: flex
     justify-content: space-between
     width: 206px
@@ -176,7 +179,7 @@
       width: 100%
   &-button
     position: absolute
-    top: calc(50% - 45px)
+    top: calc(50% - 52px)
     width: 100%;
     left: 0
     display: flex
@@ -194,6 +197,7 @@
       top: auto
       margin: 0
       background-image: none
+      right: 30px;
       @media ( max-width: 992px )
         position: static
         transform: rotate(90deg)
@@ -224,8 +228,8 @@
   .mainslider
     &-pagination
       width: auto;
-      left: 73px;
-      bottom: -2px;
+      left: 70px;
+      bottom: 0px;
       @media ( max-width: 768px )
         width: 100%;
         bottom: 2px;
@@ -253,6 +257,6 @@
   width: 100%
   object-position: 0px -90px;
   // position: relative
-  height: 100%;
+  height: calc(100% + 97px)
   object-fit: cover;
   
