@@ -18,20 +18,15 @@ $( document ).ready(function() {
       prevEl: '.mainslider-button-prev',
     },
   });
+
   var swiper2 = new Swiper('.projects__photoslider', {
     slidesPerView: 'auto',
-    spaceBetween: 30,
+    spaceBetween: 20,
     nested: 'true',
     navigation: {
       nextEl: '.photoslider-button-next',
       prevEl: '.photoslider-button-prev',
     },
-    // autoplay: {
-    //   delay: 6000,
-    // },
-    // Disable preloading of all images
-    
-    // autoHeight: true,
   });
 });
 

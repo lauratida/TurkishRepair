@@ -4,14 +4,16 @@
   padding-bottom: 415px
   position: relative
   padding-top: 128px
-  background-image: url('./img/projects/bgwaves.swg')
+  padding-left: calc( (100% - 1240px) / 2 )
   &__mainslider
     width: 100%
-  &__title
+  &-staticdesc
     position: absolute
-    max-width: 253px
     left: calc( (100% - 1240px) / 2 )
     top: 128px
+    max-width: 450px
+  &__title
+    max-width: 253px
     margin: 0
 
 .mainslider
@@ -22,7 +24,7 @@
     width: 494px
     display: flex
     flex-wrap: wrap
-    padding-top: 100px
+    padding-top: 228px
     align-content: flex-start
     flex-shrink: 0
     &__item
@@ -44,19 +46,41 @@
     line-height: 29px;
     color: $white
 
-// .mainslider
-//   &-button
-//     position: absolute
-//     bottom: 0
-//     left: 0
-//     display: flex
-//     justify-content: space-between
-//     width: 206px
-//     &-next, &-prev
-//       width: 42px
-//       height: 14px
-//     &-prev
-//       transform: rotate(180deg)
+.mainslider
+  &-button
+    position: absolute
+    bottom: 0
+    left: 0
+    display: flex
+    justify-content: space-between
+    width: 206px
+    &-next, &-prev
+      width: 42px
+      height: 14px
+      background-image: none;
+      position: static
+      margin: 0
+    &-prev
+      transform: rotate(180deg)
+.photoslider
+  &-button
+    position: absolute
+    top: calc(50% - 45px)
+    width: 100%;
+    left: 0
+    display: flex
+    justify-content: space-between
+    &-next, &-prev
+      width: 85px
+      height: 85px
+      top: auto
+      // background-image: none;
+      // position: static
+      margin: 0
+      &.swiper-button-disabled
+        display: none
+    &-prev
+      transform: rotate(180deg)
 .projects__mainslider
   .mainslider
     &-pagination

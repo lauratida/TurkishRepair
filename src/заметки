@@ -19,30 +19,29 @@
     padding: 0 18px
 
 
-/* Элемент | http://127.0.0.1:5500/src/index.html */
+/* main.min.css | http://127.0.0.1:5500/src/css/main.min.css */
 
-.mainslider-pagination {
-  width: auto;
+.photoslider-button {
+  /* bottom: 0; */
+  /* width: 206px; */
+  bottom: 50%;
+  width: 100%;
+}
+
+.photoslider-button-next, .photoslider-button-prev {
+  /* width: 54px; */
+  /* height: 54px; */
+  width: 85px;
+  height: 85px;
 }
 
 /* swiper.min.css | http://127.0.0.1:5500/src/css/swiper.min.css */
 
-.swiper-pagination-bullet {
-  /* width: 8px; */
-  /* height: 8px; */
-  /* background: #000; */
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.3);
+.swiper-button-next, .swiper-button-prev {
+  /* top: 50%; */
+  top: calc(50% - 85px);
 }
 
-.swiper-pagination-bullet-active {
-  /* background: #007aff; */
-  background: #fff;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  /* left: 0; */
-  left: 73px;
-  bottom: -2px;
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  display: none;
 }
