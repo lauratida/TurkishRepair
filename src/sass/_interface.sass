@@ -92,6 +92,13 @@ body
   +book
   font-size: 15px
   position: relative
+  max-width: 231px
+  @media ( max-width: 992px )
+    flex-basis: 30%
+  @media ( max-width: 575px )
+    flex-basis: 100%
+    margin-bottom: 38px
+    max-width: 340px
   span
     color: $grey
     position: absolute
@@ -101,10 +108,12 @@ body
   border: none
   border-bottom: 1px solid $grey
   width: 231px
-  height: 47px;
-  padding-top: 16px;
+  height: 47px
+  padding-top: 16px
   color: $dark-text
   opacity: 1
+  @media ( max-width: 992px )
+    width: 100%
   &::placeholder
     color: $dark-text
     opacity: 1

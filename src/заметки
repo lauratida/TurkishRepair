@@ -19,3 +19,36 @@
     padding: 0 18px
 
 
+/* main.css | http://127.0.0.1:5500/src/css/main.css */
+
+@media (max-width: 575px) {
+  .label {
+    margin: ;
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 575px) {
+  .video-form__button {
+    max-width: 340px;
+    flex-basis: 100%;
+  }
+}
+
+.label {
+  /* max-width: 231px; */
+  max-width: 340px;
+}
+
+@media (max-width: 575px) {
+  .video-form__checkbox {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .video-form__checkbox {
+    /* max-width: 270px; */
+    max-width: 340px;
+  }
+}
