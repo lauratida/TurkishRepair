@@ -19,7 +19,8 @@
     padding-left: calc( (100% - 539px) / 2 )
   @media ( max-width: 575px )
     padding-left: 18px
-  
+  @media ( max-width: 340px )
+    padding-top: 252px
   &::after
     content: ''
     display: block
@@ -62,12 +63,13 @@
     @media ( max-width: 575px )
       left: 18px
       width: calc(100% - 36px);
-      text-align: center;
       top: 20px
+    @media ( max-width: 420px )
+      text-align: center;
   &__title
     max-width: 253px
     margin: 0
-    @media ( max-width: 575px )
+    @media ( max-width: 420px )
       margin: auto  
 
 .mainslider

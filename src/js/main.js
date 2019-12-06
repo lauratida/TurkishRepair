@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 $( document ).ready(function() {
 
   // Включение выключение бургер меню
@@ -27,17 +27,21 @@ $( document ).ready(function() {
   var swiper2 = new Swiper('.projects__photoslider', {
     direction: 'horizontal',
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 30,
     nested: 'true',
     navigation: {
       nextEl: '.photoslider-button-next',
       prevEl: '.photoslider-button-prev',
     },
     breakpoints: {
+      // when window width is >= 320px
+      // 320: {
+      // },
+      // when window width is >= 480px
       576: {
         direction: 'horizontal',
       },
-      // when window width is >= 769px
+      // when window width is >= 640px
       769: {
         direction: 'vertical',
       },
@@ -46,10 +50,9 @@ $( document ).ready(function() {
       }
     }
   });
-
-  // Видео, отложенная загрузка с кнопкой. Youtube
-  function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
-  r(function(){
+   // Видео, отложенная загрузка с кнопкой. Youtube
+   function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+   r(function(){
       if (!document.getElementsByClassName) {
           // Поддержка IE8
           var getElementsByClassName = function(node, classname) {
