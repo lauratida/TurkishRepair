@@ -24,7 +24,7 @@ gulp.task('browser-sync', function() {
 		},
 		notify: false,
 		// online: false, // Work offline without internet connection
-		// tunnel: true, tunnel: 'lauratida', // Demonstration page: http://projectname.localtunnel.me
+		tunnel: true, tunnel: 'lauratida', // Demonstration page: http://projectname.localtunnel.me
   });
   // gulp.watch("src/*.html").on('change', browserSync.reload);
 });
@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 		outputStyle: 'expanded',
 		includePaths: [__dirname + '/node_modules']
 	}))
-	.pipe(concat('styles.min.css'))
+	.pipe(concat('main.min.css'))
 	.pipe(autoprefixer({
 		grid: true,
 		overrideBrowserslist: ['last 10 versions']
@@ -53,9 +53,9 @@ gulp.task('scripts', function() {
 	return gulp.src([
     'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
     'node_modules/swiper/js/swiper.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
-    // 'src/js/_libs.js', // JS libraries (all in one)
+    'src/js/_libs.js', // JS libraries (all in one)
     'src/js/modules/*.js',
-		// 'src/js/_custom.js', // Custom scripts. Always at the end
+		'src/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Minify js (opt.)
@@ -64,7 +64,7 @@ gulp.task('scripts', function() {
 });
 
 // Responsive Images
-var quality = 95; // Responsive images quality
+var quality = 80; // Responsive images quality
 
 // Produce @1x images
 gulp.task('img-responsive-1x', async function() {

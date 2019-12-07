@@ -3,7 +3,7 @@ $( document ).ready(function() {
 
   // Включение выключение бургер меню
   $('.ham').on('click', function(){
-    $('.navbar__menu').toggleClass('active');
+    $('.mobile__menu').toggleClass('active');
   });
 
   // Секция завершенные проекты - общий слайдер
