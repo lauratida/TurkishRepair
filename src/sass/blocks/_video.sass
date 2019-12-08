@@ -15,6 +15,7 @@
     height: 387px
   @media ( max-width: 575px )
      height: 287px
+     margin-bottom: 37px;
 div.youtube
   &:after
     content: ''
@@ -49,6 +50,10 @@ div.youtube
   align-items: center
   margin-top: -343px;
   padding-bottom: 30px
+  position: relative
+  &__bgwaves
+    top: 277px
+    height: calc(100% - 277px)
   &__title
     z-index: 0
     font-size: 20px;
@@ -57,7 +62,7 @@ div.youtube
     margin-left: 5px;
     margin-bottom: 13px;
     letter-spacing: 0
-  &__imgtitle
+  &__imgtitle, .section__imgtitle
     +yeseva
     width: 114px
     height: 28px
@@ -72,6 +77,11 @@ div.youtube
     color: $dark-text
     position: relative
     margin-bottom: 61px
+    @media ( max-width: 575px )
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 28px;
+      margin-top: 9px;
     &:before
       content: ''
       width: 55px
@@ -82,6 +92,8 @@ div.youtube
       top: -28px
       left: 50%
       transform: translateX(-50%)
+      @media ( max-width: 575px )
+        top: -17px;
   &-form
     display: flex
     justify-content: space-between
@@ -95,6 +107,8 @@ div.youtube
     &__label
       // max-width: 231px
       margin-bottom: 38px;
+      @media ( max-width: 575px )
+        margin-bottom: 61px;
     &__button
       padding-left: 60px
       padding-right: 60px
@@ -113,5 +127,5 @@ div.youtube
         padding-right: 0
       @media ( max-width: 575px )
         margin: 0
-        margin-bottom: 40px
+        margin-bottom: 62px
         max-width: 340px

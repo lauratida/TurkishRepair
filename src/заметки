@@ -18,3 +18,5 @@
     padding: 0 calc( (100% - 539px) / 2 )
   @media ( max-width: 575px )
     padding: 0 18px
+
+

@@ -4,6 +4,9 @@ $( document ).ready(function() {
   // Включение выключение бургер меню
   $('.ham').on('click', function(){
     $('.mobile__menu').toggleClass('active');
+    $('.navbar__logo').toggleClass('invisible');
+    $('.navbar__phone').toggleClass('invisible');
+
   });
 
   // Секция завершенные проекты - общий слайдер

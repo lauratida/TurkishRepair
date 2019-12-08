@@ -3,6 +3,9 @@ $black: #131313
 $main: #E3B873
 $grey: rgba(54, 54, 54, 0.5)
 $dark-text: #363636
+$extra-black: #181818
+$list-mention: #959595
+$main-shadow: rgba(227, 184, 115, 0.3);
 
 =futuraDemi
   font-family: FuturaDemiC, sans-serif
@@ -37,6 +40,36 @@ body
     padding: 0 calc( (100% - 539px) / 2 )
   @media ( max-width: 575px )
     padding: 0 18px
+.section
+  &__title
+    +yeseva
+    font-size: 27px
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: $main
+    @media ( max-width: 575px )
+      font-size: 22px;
+      line-height: 31px;
+.subsection
+  &__title
+    font-size: 20px;
+    line-height: 28px;
+    color: $white
+    margin-left: 5px;
+    margin-bottom: 13px;
+    letter-spacing: 0
+    // margin: auto
+    text-align: center
+    &_black
+      color: $extra-black !important
+  &__imgtitle
+    +yeseva
+    width: 114px
+    height: 28px
+    z-index: 0
+    margin-bottom: 32px;
+    margin: auto
 .button
   background: $main
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
@@ -97,7 +130,7 @@ body
     flex-basis: 30%
   @media ( max-width: 575px )
     flex-basis: 100%
-    margin-bottom: 38px
+    margin-bottom: 27px
     max-width: 340px
   span
     color: $grey
@@ -112,6 +145,7 @@ body
   padding-top: 16px
   color: $dark-text
   opacity: 1
+  background-color: transparent
   @media ( max-width: 992px )
     width: 100%
   &::placeholder
@@ -137,15 +171,13 @@ input[type=checkbox]
     margin-right: 10px
 input.checkbox:checked + label:before
   content: url('../img/video/check.svg')
-.section
-  &__title
-    +yeseva
-    font-size: 27px
-    line-height: 37px;
-    letter-spacing: -0.07em;
-    text-transform: uppercase;
-    color: $main
+
 .block
   display: block
 .maincolor-text
   color: $main
+.invisible
+  opacity: 0
+
+.whitesections
+  position: relative

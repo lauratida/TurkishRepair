@@ -43,7 +43,7 @@ gulp.task('styles', function() {
 		grid: true,
 		overrideBrowserslist: ['last 10 versions']
 	}))
-	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
+	.pipe(cleancss( {level: { 2: { all: true } } })) // Optional. Comment out when debugging
 	.pipe(gulp.dest('src/css'))
 	.pipe(browserSync.stream())
 });
@@ -118,6 +118,7 @@ gulp.task('rsync', function() {
 gulp.task('watch', function() {
 	gulp.watch('src/sass/**/*.sass', gulp.parallel('styles'));
 	gulp.watch(['src/js/_custom.js', 'src/js/_libs.js'], gulp.parallel('scripts'));
+	gulp.watch('src/js/modules/*.js', gulp.parallel('scripts'));
 	gulp.watch('src/*.html', gulp.parallel('code'));
 	gulp.watch('src/img/_src/**/*', gulp.parallel('img'));
 });

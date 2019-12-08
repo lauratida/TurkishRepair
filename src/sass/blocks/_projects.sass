@@ -19,6 +19,7 @@
     padding-left: calc( (100% - 539px) / 2 )
   @media ( max-width: 575px )
     padding-left: 18px
+    padding-top: 226px;
   @media ( max-width: 340px )
     padding-top: 252px
   &::after
@@ -63,7 +64,7 @@
     @media ( max-width: 575px )
       left: 18px
       width: calc(100% - 36px);
-      top: 20px
+      top: 13px
     @media ( max-width: 420px )
       text-align: center;
   &__title
@@ -120,7 +121,13 @@
     @media ( max-width: 1200px )
       font-size: 16px;
       margin-top: 5px;
-
+    @media ( max-width: 575px )
+      font-size: 14px;
+      margin-top: 22px;
+      max-width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 23px;
 .mainslider
   &-button
     position: absolute
@@ -169,6 +176,7 @@
         width: 100%
         height: 100%
         object-fit: cover
+    
     @media ( max-width: 1200px )
       width: 405px;
       height: 382px;
@@ -179,6 +187,7 @@
       width: 430px
     @media ( max-width: 575px )
       width: 100%
+      height: 241px
   &-button
     position: absolute
     top: calc(50% - 52px)

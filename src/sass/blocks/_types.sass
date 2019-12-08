@@ -1,0 +1,92 @@
+.types
+  padding-top: 60px
+  padding-bottom: 90px
+.card
+  position: relative
+  width: 31.6%
+  @media ( max-width: 1200px )
+    width: 32%
+  @media ( max-width: 992px )
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 50px;
+  @media ( max-width: 575px )
+    flex-direction: column
+    align-items: flex-start
+    width: auto
+    margin-left: auto
+    margin-right: auto
+  &s
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+  &__img
+    z-index: 0
+    object-fit: cover
+    img
+      width: 100%
+  &__desc
+    background-color: $white
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03)
+    position: relative
+    width: 84.2%;
+    margin-top: -131px;
+    margin-left: 32px;
+    padding: 5px 0 56px 31px;
+    @media ( max-width: 1430px )
+      width: 90.2%;
+      margin-left: 0;
+    @media ( max-width: 1200px )
+      padding: 5px 10px 56px 15px;
+      width: 96.2%
+    @media ( max-width: 992px )
+      padding: 5px 10px 45px 15px;
+      margin-top: 123px;
+      margin-left: -90px;
+    @media ( max-width: 575px )
+      margin-top: -142px;
+      margin-left: 0;
+      max-width: 330px;
+  &__title
+    +yeseva
+    font-size: 18px;
+    line-height: 25px;
+    color: $dark-text
+    margin-bottom: 4px;
+    @media ( max-width: 575px )
+      font-size: 15px;
+  &__list
+    padding-left: 15px;
+    margin: 0;
+    color: $list-mention
+    font-size: 15px;
+    line-height: 25.5px;
+    @media ( max-width: 575px )
+      font-size: 13px
+  &__price
+    background-color: $main
+    max-width: 227px
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    padding: 14px 0px 14px 35px
+    color: $white
+    margin-top: -26px;
+    margin-left: 32px;
+    position: relative;
+    box-shadow: 5px 5px 10px $main-shadow;
+    @media ( max-width: 1430px )
+      margin-left: 0
+    @media ( max-width: 992px )
+      position: absolute;
+      right: 0;
+      bottom: -24px;
+      width: 227px;
+      padding: 14px 0px 14px 35px;
+    @media ( max-width: 575px )
+      font-size: 15px
+      position: relative
+      // align-self: flex-start
