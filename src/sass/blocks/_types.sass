@@ -97,3 +97,28 @@
       font-size: 15px
       position: relative
       // align-self: flex-start
+
+.design
+  padding-top: 134px
+  @media ( max-width: 575px )
+    padding-top: 0
+    padding-bottom: 30px
+    background-color: $black
+  &__title
+    margin-bottom: 13px
+    color: $black
+    @media ( max-width: 575px )
+      color: $white
+  &__imgtitle
+    margin-bottom: 19px
+  &__desc
+    max-width: 741px
+    +book
+    font-size: 20px
+    line-height: 27px;
+    text-align: center;
+    margin: auto
+    margin-bottom: 47px
+    @media ( max-width: 575px )
+      color: $white
+      font-size: 15px

@@ -53,6 +53,37 @@ $( document ).ready(function() {
       }
     }
   });
+
+  // Секция шаги
+  var swiper3 = new Swiper('.steps-swiper-container', {
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: '.steps-swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.steps-swiper-button-next',
+      prevEl: '.steps-swiper-button-prev',
+    },
+  });
+
+  $('.steps-tabs').on('click',  '.steps-tabs__index', function() {
+    $('.steps-tabs__index').removeClass('active');
+    $(this).addClass('active');
+    const index = $(this).data('index');
+    swiper3.slideTo(index);
+  });
+  swiper3.on('slideChange', function () {
+    var index = swiper3.activeIndex - 1;
+    console.log(index);
+    $('.steps-tabs__index').removeClass('active');
+    $('.steps-tabs__index').eq(index).addClass('active')
+   });
+
    // Видео, отложенная загрузка с кнопкой. Youtube
    function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
    r(function(){
