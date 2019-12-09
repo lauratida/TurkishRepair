@@ -1,0 +1,87 @@
+.team
+  margin-top: -426px
+  &__title
+    margin-bottom: 1rem
+  &__imgtitle
+    margin-bottom: 1.2rem
+  &__desc
+    margin: auto;
+    margin-bottom: 5.93rem;
+    max-width: 450px
+    color: $white
+    +book
+    font-size: 20px
+    line-height: 27px
+    text-align: center
+  &__cards
+    max-width: 1029px
+    margin: auto
+    margin-bottom: 63px
+  &-card
+    position: relative
+    &__img
+    &__icon
+      width: 70px
+      height: 70px
+      top: -35px;
+      left: -34px;
+      background-color: $main
+      display: inline-flex
+      align-items: center
+      justify-content: center
+      box-shadow: 0px 5px 20px $main-shadow;
+      position: absolute
+    &__desc
+      width: 85%
+      background-color: $white
+      position: relative
+      text-align: center
+      margin: -85px auto auto;
+      padding-top: 4px;
+      font-size: 18px
+    &__title
+      +yeseva
+      color: $extra-black
+      margin-top: 16px;
+      margin-bottom: 4px;
+    &__position
+      color: $list-mention
+      +book
+      margin-top: 0;
+    &__price
+      line-height: 20px;
+      text-transform: uppercase;
+      background-color: $main
+      color: $white
+      font-size: 13px
+      padding: 14px 0
+      +yeseva
+      padding: 12px 0;
+      margin: 0;
+  &__text
+    max-width: 568px;
+    +book
+    font-size: 20px
+    line-height: 34px;
+    text-align: center;
+    color: $dark-text
+    position: relative
+    margin: auto
+    margin-bottom: 61px
+    @media ( max-width: 575px )
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 28px;
+      margin-top: 9px;
+    &:before
+      content: ''
+      width: 55px
+      height: 2px
+      background-color: $main
+      display: block
+      position: absolute
+      top: -10px
+      left: 50%
+      transform: translateX(-50%)
+      @media ( max-width: 575px )
+        top: -17px;

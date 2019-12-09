@@ -20,5 +20,21 @@
     padding: 0 18px
 
 
-margin-top: -434px;
-padding-top: 351px;
+
+/* main.min.css | http://localhost:3000/css/main.min.css?browsersync=1575930774773 */
+
+.team-card__title {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.team-card__position {
+  margin-top: 0;
+}
+
+.team-card__price {
+  /* padding: 14px 0; */
+  padding: 12px 0;
+  margin: 0;
+}
+
