@@ -1,0 +1,50 @@
+.questions
+  margin-top: -223px
+  position: relative
+  @media ( max-width: 575px )
+    margin-top: 0
+    background-color: $black
+  &__form
+    max-width: 883px
+    margin: auto
+    flex-direction: row
+    flex-wrap: wrap
+    padding: 34px 181px
+    justify-content: space-between;
+    background-image: url('../img/@1x/questions/formbg.png')
+    @media ( max-width: 768px )
+      padding: 34px 60px
+    @media ( max-width: 575px )
+      background-image: none
+  &__title
+    flex-basis: 100%
+    text-transform: uppercase
+    +yeseva
+  &__label
+    width: 44%
+    max-width: 100%
+    @media ( max-width: 992px )
+      flex-basis: 100%
+      width: 100%
+    &:nth-child(4)
+      width: 100%
+      margin-bottom: 33px
+  &__input
+    width: 100%
+    max-width: 100%
+  &__label-checkbox
+    width: 100%
+    max-width: 100%
+    justify-content: center
+    margin-bottom: 50px
+    @media ( max-width: 992px )
+      flex-basis: 100%
+      width: 100%
+    @media ( max-width: 575px )
+      margin-left: 0
+      max-width: 285px
+      justify-content: flex-start
+  &__button
+    margin: auto
+    @media ( max-width: 575px )
+      width: 100%
