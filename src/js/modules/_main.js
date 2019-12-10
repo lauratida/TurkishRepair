@@ -70,6 +70,7 @@ $( document ).ready(function() {
       prevEl: '.steps-swiper-button-prev',
     },
   });
+  
 
   $('.steps-tabs').on('click',  '.steps-tabs__index', function() {
     $('.steps-tabs__index').removeClass('active');

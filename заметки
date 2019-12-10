@@ -20,9 +20,10 @@
     padding: 0 18px
 
 
-team__desc {
-- max-width: 450px;
-- font-size: 20px;
-+ max-width: 340px;
-+ font-size: 15px;
+
+/* main.min.css | http://localhost:3000/css/main.min.css */
+
+.steps {
+  /* margin-top: -544px; */
+  margin-top: -504px;
 }

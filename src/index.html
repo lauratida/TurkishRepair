@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <div class="content">
   <!-- шапка -->
   <header class="header">
     <!-- меню -->
@@ -35,7 +36,7 @@
         <li class="menu__item">Контакты</li>
       </ul>
       <a href="tel:+79997683299" class="navbar__phone">+7 (999) 768-32-99</a>
-      <button class="button navbar__button">Заказать звонок</button>
+      <button class="button navbar__button modal-view">Заказать звонок</button>
     </nav>
     <!-- шапка-главный экран -->
     <div class="section header-main">
@@ -60,7 +61,7 @@
         <p class="header-main__desc">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
         <div class="header-main__buttons">
           <button class="button button_more header-main__button">Рассчитать стоимость</button>
-          <button class="button button_more button_border header-main__button">отправить заявку</button>
+          <button class="button button_more button_border header-main__button modal-view">отправить заявку</button>
         </div>
       </div>
       
@@ -375,7 +376,7 @@
         </label>
         <input class="checkbox label-checkbox form__checkbox" type="checkbox" name="form-check" id="form-check">
         <label for="form-check" class="label label-checkbox form__label-checkbox">
-          Я соглашаюсь с обработкой данных
+          Я cоглашаюсь с обработкой данных
         </label>
         <button type="submit" class="button button_more form__button">Вызвать замерщика</button>
         <div class="form__feature">
@@ -663,6 +664,71 @@
       <p class="team__text">
           Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
       </p>
+  </div>
+
+  <section class="container clients">
+    <h2 class="section__title subsection__title subsection__title_black clients__title">Наши клиенты</h2>
+    <div class="subsection__imgtitle clients__imgtitle"><img src="img/clients-img-title.svg" alt="Наши клиенты"></div>
+    <p class="clients__desc">80% наших клиентов рекомендуют нас своим знакомым и друзьям</p>
+
+    <div class="clients-wrapper">
+      <!-- Slides -->
+      <div class="clients-slide swiper-slide">
+        <img class="clients-slide__photo" src="img/@1x/clients/clients-01.png" alt="">
+        <h4 class="clients-slide__name">Савельева Екатерина Львовна</h4>
+        <p class="clients-slide__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</p>
+        <div class="clients-slide__labels">
+          <span class="clients-slide__label"><img src="img/ic-area.svg" alt=""> 40 m<sup>2</sup></span>
+          <span class="clients-slide__label"><img src="img/ic-calendar.svg" alt=""> 128 дней</span>
+        </div>
+      </div>
+      <div class="clients-slide swiper-slide">
+        <img class="clients-slide__photo" src="img/@1x/clients/clients-02.png" alt="">
+        <h4 class="clients-slide__name">Большов Михаил Анатольевич</h4>
+        <p class="clients-slide__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</p>
+        <div class="clients-slide__labels">
+          <span class="clients-slide__label"><img src="img/ic-area.svg" alt=""> 56 м<sup>2</sup></span>
+          <span class="clients-slide__label"><img src="img/ic-calendar.svg" alt=""> 86 дней</span>
+        </div>
+      </div>
+      <div class="clients-slide swiper-slide">
+        <img class="clients-slide__photo" src="img/@1x/clients/clients-03.png" alt="">
+        <h4 class="clients-slide__name">Хасанов Даниил Муратович</h4>
+        <p class="clients-slide__text">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</p>
+        <div class="clients-slide__labels">
+          <span class="clients-slide__label"><img src="img/ic-area.svg" alt=""> 56 m<sup>2</sup></span>
+          <span class="clients-slide__label"><img src="img/ic-calendar.svg" alt=""> 48 дней</span>
+        </div>
+      </div>
+  
+  </div>
+  </section>
+
+  </div>
+  <div class="modal">
+    <div class="modal-form">
+      <button class="modal__close" id="closemodal"><img src="img/ic-close.svg" alt=""></button>
+      <form action="#" method="POST" class="form measures__form">
+        <h3 class="form__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+        <label for="modal-username" class="label form__label">
+          <span>Имя</span>
+          <input type="text" name="measure-username" id="modal-username" class="input form__input" placeholder="Как вас зовут:">
+        </label>
+        <label for="modal-userphone" class="label form__label">
+          <span>Телефон</span>
+          <input type="text" name="measure-userphone" id="modal-userphone" class="input form__input" placeholder="Ваш телефон:">
+        </label>
+        <label for="modal-userphone" class="label form__label">
+          <span>Email</span>
+          <input type="text" name="modal-userphone" id="measure-userphone" class="input form__input" placeholder="Ваш email:">
+        </label>
+        <input class="checkbox label-checkbox form__checkbox" type="checkbox" name="form-check" id="modal-check">
+        <label for="modal-check" class="label label-checkbox form__label-checkbox">
+          Я cоглашаюсь с обработкой данных
+        </label>
+        <button type="submit" class="button button_more form__button">Отправить заявку</button>
+      </form>
+    </div>
   </div>
   <script src="js/scripts.min.js"></script>
   

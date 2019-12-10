@@ -1,0 +1,53 @@
+.is-blured
+  filter: blur(2px);
+.overflow
+  overflow: hidden
+.modal *
+  filter: none
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($extra-black, 0.6)
+  display: none
+  z-index: 100
+  justify-content: center
+  align-items: center
+  filter: none;
+  padding: 15px 15px
+  
+  &-form
+    position: relative
+    overflow: scroll
+    max-height: 100%
+    .form
+      margin: 0
+      padding: 34px 49px 27px;
+  &.modal_active
+    display: flex
+  &__close
+    position: absolute
+    top: 14px;
+    right: 14px;
+    width: 24px
+    height: 24px
+    border: 1px solid $white
+    background-color: transparent
+    border-radius: 100%
+    cursor: pointer
+    z-index: 100
+    outline: none
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    &:hover 
+      & img
+        transform: scale(2);
+      
+    img
+      width: 7px
+      height: 7px
+      transform: scale(1.5);
+      display: block
