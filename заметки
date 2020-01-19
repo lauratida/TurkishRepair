@@ -20,3 +20,45 @@
     padding: 0 18px
 
 
+
+/* style.css | https://roman-00.github.io/project-build/css/style.css */
+
+.hero__content {
+  /* margin-left: 60px; */
+  margin-left: 34px;
+}
+
+.hero {
+  padding-top: 20px;
+}
+
+.logo {
+  margin-left: -26px;
+}
+
+.button {
+  /* padding: 11px 19px; */
+  padding: 11px 21px;
+}
+
+.contacts__phone {
+  /* margin-right: 45px; */
+  margin-right: 42px;
+}
+
+.instagram__link {
+  /* margin-bottom: 80px; */
+  margin-bottom: 68px;
+}
+
+/* Элемент | https://roman-00.github.io/project-build/ */
+
+.nav {
+  margin-left: 23px;
+}
+
+/* Элемент | https://roman-00.github.io/project-build/ */
+
+button.button:nth-child(2) {
+  margin-right: -8px;
+}

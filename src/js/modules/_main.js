@@ -80,7 +80,6 @@ $( document ).ready(function() {
   });
   swiper3.on('slideChange', function () {
     var index = swiper3.activeIndex - 1;
-    console.log(index);
     $('.steps-tabs__index').removeClass('active');
     $('.steps-tabs__index').eq(index).addClass('active')
    });
